@@ -26,7 +26,7 @@
                 Profile
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">User</a></li>
+                <li><a class="dropdown-item" href="{{ route('user')}}">User</a></li>
                 <li><a class="dropdown-item" href="{{ route('sales') }}">Sales</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Settings</a></li>

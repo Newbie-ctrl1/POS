@@ -5,6 +5,10 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SalesController;
+use App\Http\Controllers\LevelController;
+use App\Http\Controllers\CategoryController;
+
+
 
 // route home index 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -20,7 +24,11 @@ Route::prefix('product')->group(function (){
 });
 
 // route parameters user
-Route::get('/user/{id}/{name}', [UserController::class, 'profile'])->name('profile');
+Route::get('/user', [UserController::class, 'index'])->name('user');
 
 // route untuk sales
 Route::get('/sales', [SalesController::class, 'index'])->name('sales');
+
+// route LevelController
+Route::get('/level', [LevelController::class, 'index']);
+Route::get('/category', [CategoryController::class, 'index']);

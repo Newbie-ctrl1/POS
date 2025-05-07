@@ -1,1 +1,5 @@
-<h2>HOME-CARE</h2>
+@extends('layout.index')
+
+@section('content')
+    <h2>Home-Care</h2>
+@endsection

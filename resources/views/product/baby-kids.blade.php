@@ -1,1 +1,5 @@
-<h2>BABY-KIDS</h2>
+@extends('layout.index')
+
+@section('content')
+    <h2>Baby-Kids</h2>
+@endsection
