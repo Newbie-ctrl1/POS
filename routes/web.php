@@ -37,3 +37,7 @@ Route::get('/sales', [SalesController::class, 'index'])->name('sales');
 // route LevelController
 Route::get('/level', [LevelController::class, 'index']);
 Route::get('/category', [CategoryController::class, 'index']);
+
+Route::get('/layout', function () {
+    return view('layout.template');
+});
